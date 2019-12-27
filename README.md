@@ -41,11 +41,13 @@ Selected models have approximately the same accuracy score.
 |Logistic regression|0.549108|
 
 SVM model with linear kernel has the largest accuracy of **56.19%** for selected dataset.
-Evidently, this  means that the question-vectors of dimension $n$ presented by tf-idf metod are best separated by hyperplanes of dimension $n - 1$.
+Evidently, it  means that the question-vectors of dimension `n` presented by tf-idf metod are best separated by hyperplanes of dimension `n - 1`.
 
-We compare also compare the obtained results for classic algorithms with the model based on simple neural network which consists of two hidden layers. Number of neurons in hidden layers is equal to the dimension of question-vector. Output layer dimension equals to the number of classes.
+We also compare the obtained results for classic algorithms with the model based on the simple neural network which consists of two hidden layers. Number of neurons in hidden layers is equal to the dimension of question-vector. Hidden layers are fully connected. Output layer dimension equals to the number of classes.
 
 The realization of neural network architecture as well as its training is presented in the notebook `nn_classifier.ipynb` of the repository.
 **The classifier based on the artificial neural network has larger accuracy in comparision with methods described below**
-Its accuracy **87.56%***.
+Its accuracy **87.56%**.
+
+The main results are presented in the notebook `multiclass.ipynb` of the repository.
 
